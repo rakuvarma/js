@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display a time-based greeting:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+   var result;
+   var marks = window.prompt("enter the marks");
+    if (marks >= 75) {
+        result = "A";
+    } else if (marks >= 65) {
+        result = "B";
+    } else if (marks >= 55) {
+        result = "C";
+    } else if (marks >= 45) {
+        result = "S";
+    } else {
+        result = "Fail";
+    }
+    document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
